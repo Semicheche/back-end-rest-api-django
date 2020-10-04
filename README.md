@@ -31,7 +31,7 @@ pip install -r requeriments.txt
 ```
 After install all requeriments configure Database connection on `ApiRestProduct/settings.py`
 
-```json
+```python
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
