@@ -1,5 +1,7 @@
 # back-end-rest-api-django
-##
+
+REST API develope with Python and framework django with authentication Oauth and MongoDB
+
 - [Python 3](https://www.python.org/)
 - [Django Rest Framework](https://www.django-rest-framework.org/)
 - [MongoDB](https://www.mongodb.com/)
@@ -51,6 +53,22 @@ And is ready to run application:
 $ python manage.py runserver
 ```
 
-
-
-
+Routers API
+Collection to postman https://www.getpostman.com/collections/532ed4d078eec34e0c46
+## Products
+```
+GET         api/products                    index
+GET         api/products/:id                show
+POST        api/products/:id                create
+PUT         api/products/:id                update
+DELETE      api/products/:id                delete
+```
+## Kits
+```
+GET         api/kits                        index
+GET         api/kits/:id                    show
+POST        api/kits/:id                    create
+PUT         api/kits/:id                    update
+DELETE      api/kits/:id                    delete
+DELETE      api/kits/:id/calculate-kit      calculate-kit
+```
