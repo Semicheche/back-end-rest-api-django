@@ -9,11 +9,11 @@ Install `virtualenv` to create a isolated environment to the project:
 ```
     $ pip install virtualenv
 ```
-then on folder where stay the application create virtual environment
+Then on folder where stay the application create virtual environment
 ```
     $ virtualenv env
 ```
-after going activate :
+After going activate :
 ```
 $ source env/bin/activate
 ```
