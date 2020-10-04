@@ -96,7 +96,7 @@ WSGI_APPLICATION = 'ApiRestProduct.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'api_rest_product_db',
+        'NAME': 'database_name',
         'HOST': '127.0.0.1',
         'PORT': 27017,
     }
