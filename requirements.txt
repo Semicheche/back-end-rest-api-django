@@ -4,3 +4,4 @@ django-cors-headers
 django-rest-auth
 django-allauth
 djongo
+sqlparse==0.2.4

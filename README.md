@@ -1,6 +1,6 @@
 # back-end-rest-api-django
 
-REST API develope with Python and framework django with authentication Oauth and MongoDB
+REST API develope with Python and framework django with authentication OAuth2.0 and MongoDB
 
 - [Python 3](https://www.python.org/)
 - [Django Rest Framework](https://www.django-rest-framework.org/)
@@ -21,7 +21,7 @@ $ source env/bin/activate
 ```
 Now clone repositories with project:
    ```
-   $ git clone https://github.com/Semicheche back-end-rest-api-django.git
+   $ git clone https://github.com/Semicheche/back-end-rest-api-django.git
    ```
 After repository cloned run this command:
 ```
