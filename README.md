@@ -11,7 +11,7 @@ Install `virtualenv` to create a isolated environment to the project:
 ```
 $ pip install virtualenv
 ```
-Then on folder where stay the application create the virtual environment
+Then create the virtual environment
 ```
 $ virtualenv env
 ```
@@ -55,6 +55,19 @@ $ python manage.py runserver
 
 Routers API
 Collection to postman https://www.getpostman.com/collections/532ed4d078eec34e0c46
+
+## OAuth2.0
+
+access url application example `http://localhost:8000/registration` to register and then you can the login in `http://localhost:8000/login` get a key Authorization 
+Exapmple:
+```
+{
+    "key": "db4c96f427f9dd79a5dc869890a9e54459f48d1b"
+}
+```
+
+on postman you add in tab **Authorization** type **OAuth2.0** and write **Token** on field **Header Prefix** and paste the key on filed **Acess Token**
+
 ## Products
 ```
 GET         api/products                    index
@@ -70,5 +83,5 @@ GET         api/kits/:id                    show
 POST        api/kits/:id                    create
 PUT         api/kits/:id                    update
 DELETE      api/kits/:id                    delete
-DELETE      api/kits/:id/calculate-kit      calculate-kit
+GET         api/kits/:id/calculate-kit      calculate-kit
 ```

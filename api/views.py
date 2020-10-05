@@ -40,7 +40,7 @@ class KitsViewSet(viewsets.ModelViewSet):
                         discount      =  product["discount"],
                     ))
             else:
-                return JsonResponse({'message': "O kit precisa de 2 ou mais produtos para o cadastro"}, status=status.HTTP_200_OK)
+                return JsonResponse({'message': "The kit must be content 2 or more products"}, status=status.HTTP_400_BAD_REQUEST)
 
 
             kit = Kit.objects.create(
@@ -55,7 +55,7 @@ class KitsViewSet(viewsets.ModelViewSet):
         except ObjectDoesNotExist as e:
             return JsonResponse({'error': str(e)}, safe=False, status=status.HTTP_404_NOT_FOUND)
         except Exception:
-            return JsonResponse({'error': "Cannot possible create this kit"}, safe=False, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+            return JsonResponse({'error': "Cannot create this kit"}, safe=False, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
     def update(self, request, pk):
 
@@ -84,7 +84,7 @@ class KitsViewSet(viewsets.ModelViewSet):
         except ObjectDoesNotExist as e:
             return JsonResponse({'error': str(e)}, safe=False, status=status.HTTP_404_NOT_FOUND)
         except Exception:
-            return JsonResponse({'error': "Cannot possible create this kit"}, safe=False, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+            return JsonResponse({'error': "Cannot create this kit"}, safe=False, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
     @action(detail=True, methods=['get'], url_path='kits-calculation')
     def kits_calculation(self, request, pk):

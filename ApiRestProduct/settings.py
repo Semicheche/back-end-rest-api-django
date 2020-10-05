@@ -25,7 +25,7 @@ SECRET_KEY = '$42x2z9zcahqwc2&j+@(4)-f^00#dx=##o-lde-^j=7*c_iaa5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -97,8 +97,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'NAME': 'database_name',
-        'HOST': '127.0.0.1',
+        'HOST': 'localhost',
         'PORT': 27017,
+        'USER': 'database_username',
+        'PASSWORD': 'database_password',
     }
 }
 
