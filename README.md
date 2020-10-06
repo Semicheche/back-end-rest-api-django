@@ -58,7 +58,7 @@ Collection to postman https://www.getpostman.com/collections/532ed4d078eec34e0c4
 
 ## OAuth2.0
 
-access url application example `http://localhost:8000/registration` to register and then you can the login in `http://localhost:8000/login` get a key Authorization 
+access url application example `http://localhost:8000/registration` to register and then you can the login in `http://localhost:8000/login` get a key Authorization
 Exapmple:
 ```
 {
